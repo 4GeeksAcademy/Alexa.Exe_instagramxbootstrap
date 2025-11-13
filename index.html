@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Instagram</title>
+</head>
+
+<body>
+
+
+    <div class="navbarInst">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand"><i class="fa-brands fa-instagram"></i>Instagram</a>
+                <form class="d-flex gap-2">
+
+                    <!--MODAL-->
+
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create a new post
+                    </button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Cerrar"></button>
+                                </div>
+                                <div class="mx-3">Caption:</div>
+                                <div class="form-floating mx-2 my-2">
+                                    <textarea class="form-control" placeholder="Add the caption here"
+                                        id="floatingTextarea2" style="height: 100px"></textarea>
+                                    <label for="floatingTextarea2"> Add the caption here</label>
+                                </div>
+                                <div class="mx-2 my-4">
+                                    <button type="button" class="btn btn-light sm"><i
+                                            class="fa-solid fa-camera"></i></button>
+                                    <button type="button" class="btn btn-light sm"><i
+                                            class="fa-solid fa-location-dot"></i></button>
+                                </div>
+
+                                <div class="modal-footer">
+
+                                    <div>
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success">Publish</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--DROPDOWN-->
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item" type="button">Profile</button></li>
+                            <li><button class="dropdown-item" type="button">Accesibility</button></li>
+                            <li><button class="dropdown-item" type="button">Privacy and Data</button></li>
+                        </ul>
+                    </div>
+
+                </form>
+            </div>
+        </nav>
+    </div>
+    <!--CUADRICULAS Y CAMBIO DE VISTA-->
+
+    <ul class="nav d-flex justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+                    class="fa-solid fa-table-cells"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
+                    class="fa-solid fa-stop"></i></button>
+        </li>
+        <!--IMAGENES CUADRICULA-->
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">
+            <div class="row mx-2">
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+                        <img class="img-fluid object-fit-cover"
+                            src="https://fastly.picsum.photos/id/169/2500/1662.jpg?hmac=3DBeyQbiPxO88hBdhIuFPbvy2ff7cm9vmnq8lPIL9Ug"
+                            alt="image">
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+                        <img class="img-fluid object-fit-cover"
+                            src="https://fastly.picsum.photos/id/342/2896/1944.jpg?hmac=_2cYDHi2iG1XY53gvXOrhrEWIP5R5OJlP7ySYYCA0QA"
+                            alt="image2">
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+                        <img class="img-fluid object-fit-cover"
+                            src="https://fastly.picsum.photos/id/348/3872/2592.jpg?hmac=I51bqSjuTk6zKHgtJDpMLY3kSSfAXdB8AHGmWf-Eq1Q"
+                            class="img-thumbnail" alt="image3">
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+                        <img class="img-fluid object-fit-cover"
+                            src="https://media.istockphoto.com/id/2151954540/es/foto/view-of-paris-with-eiffel-tower.jpg?s=1024x1024&w=is&k=20&c=CPgxDor_JynIDxxhgV4vX9IpA4vMmbtWsP37fK92LAU="
+                            class="img-thumbnail" alt="image4">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+                        <img class="img-fluid object-fit-cover"
+                            src="https://fastly.picsum.photos/id/336/400/400.jpg?hmac=5sCfEC5PUPwcBuPHXkBLHwu2X_-UuvPuZlUYJEa9GZg"
+                            class="img-thumbnail" alt="image5">
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 p-2">
+                    <div class="ratio ratio-1x1">
+
+                        <img class="img-fluid object-fit-cover"
+                            src="https://fastly.picsum.photos/id/1062/300/300.jpg?hmac=jA6pPG_9vsLrMpsnXDlM8YNDHxjQYcbFT8MJ1uXNT_I"
+                            class="img-thumbnail" alt="image6">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+            <!--IMAGENES CARTA-->
+            <div class="card my-2 m-auto" style="width: 18rem;">
+                <div class="card-header d-flex justify-content-between align-items-center px-2 py-2">
+                    <div>
+                        <h5 class="mb-0">My Crazy dog Spark!</h5>
+                    </div>
+                    <div class="text-muted small">08/26</div>
+                </div>
+
+                <img src="https://cataas.com/cat" class="card-img-top" alt="image">
+                <div class="card-body">
+                    <h5 class="card-title">204 likes</h5>
+                    <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+                </div>
+            </div>
+
+            <div class="card my-2 m-auto" style="width: 18rem;">
+                <div class="card-header d-flex justify-content-between align-items-center px-2 py-2">
+                    <div>
+                        <h5 class="mb-0">The Greatness of Croatia</h5>
+                    </div>
+                    <div class="text-muted small">04/09</div>
+                </div>
+
+                <img src="https://cataas.com/cat/orange" class="card-img-top" alt="image">
+                <div class="card-body">
+                    <h5 class="card-title">26985 likes</h5>
+                    <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+                </div>
+            </div>
+
+            <div class="card my-2 m-auto" style="width: 18rem;">
+                <div class="card-header d-flex justify-content-between align-items-center px-2 py-2">
+                    <div>
+                        <h5 class="mb-0">Amazing goal by a cat</h5>
+                    </div>
+                    <div class="text-muted small">08/26</div>
+                </div>
+
+                <img src="https://cataas.com/cat/black" class="card-img-top" alt="image">
+                <div class="card-body">
+                    <h5 class="card-title">206 likes</h5>
+                    <p class="card-text">This is an example of a very good photo that you can post on instagram</p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
